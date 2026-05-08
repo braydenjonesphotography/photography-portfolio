@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brayden Jones Photography portfolio based in Ventura, California.">
+  <title>Brayden Jones Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#portfolio">Skip to portfolio</a>
+
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <a href="#top" class="nav-logo" aria-label="Brayden Jones Photography home">Brayden Jones</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <div class="nav-right" id="primary-menu">
+      <ul class="nav-links">
+        <li><a href="#portfolio" class="nav-link active">Portfolio</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero section-observe" data-section="top">
+      <div class="hero-img" aria-hidden="true">
+        <!-- Replace this placeholder block with: <img src="images/your-hero-photo.jpg" alt="..." class="hero-photo"> -->
+        <img src="images/Golden_Gate.jpg" alt="Golden Gate Bridge Black and White FIlm" class="hero-photo">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal-on-scroll">
+        <div class="hero-left">
+          <p class="hero-eyebrow">Ventura, California</p>
+          <h1 class="hero-title">Images that<br><em>mean something.</em></h1>
+        </div>
+        <div class="hero-right">
+          <p class="hero-desc">Commercial and portrait photography. Landscapes for the love of it.</p>
+          <a class="hero-scroll" href="#portfolio">Scroll to explore</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid-section section-observe" id="portfolio" data-section="portfolio" aria-labelledby="portfolio-title">
+      <div class="grid-label reveal-on-scroll">
+        <h2 class="gl-title" id="portfolio-title">Portfolio</h2>
+        <span class="gl-count">Selected work</span>
+      </div>
+
+      <div class="photo-grid">
+        <!-- Replace each placeholder with a real image, keeping the .photo-item structure. -->
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Landscape" aria-label="Open Portraits photo">
+          <img src="images/OliviaRock.jpg" alt="Joshua Tree Shoot">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Joshua Tree</span></span></span>
+        </button>
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Portrait" aria-label="Open Landscape photo">
+          <img src="images\noah_portrait.JPG" alt="Ventura County Portraits">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Portrait</span></span></span>
+        </button>
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Landscape" aria-label="Open Commercial photo">
+          <img src="images/yucca.jpg" alt="Yucca Flower">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Joshua Tree</span></span></span>
+        </button>
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Portrait" aria-label="Open Portrait photo">
+          <img src="images/OliviaRock2.jpg" alt="Girl Laying on Rock">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Portrait</span></span></span>
+        </button>
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Portrait" aria-label="Open Landscape photo">
+          <img src="images/SpencerPortrait.jpg" alt="Man in red on tree lined road">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Portrait</span></span></span>
+        </button>
+        <button class="photo-item reveal-on-scroll" type="button" data-category="Landscape" aria-label="Open Branding photo">
+          <img src="images/JoshuaTree.jpg" alt="Girl Laying on Rock">
+          <span class="photo-overlay"><span class="photo-meta"><span class="photo-cat">Joshua Tree</span></span></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="about-strip section-observe" id="about" data-section="about" aria-labelledby="about-title">
+      <div class="about-img-wrap reveal-on-scroll">
+        <!-- Replace with: <img src="images/about-photo.jpg" alt="Brayden Jones" class="about-photo"> -->
+        <img src="images\me.jpeg" alt="Portrait of the photographer" class="about-photo">
+        <div class="about-accent-line"></div>
+      </div>
+      <div class="about-text reveal-on-scroll">
+        <p class="about-eyebrow">About</p>
+        <h2 class="about-name" id="about-title">Brayden Jones</h2>
+        <p class="about-body">Based in Ventura, California, shooting commercial portraits and landscapes with the same obsessive attention to light. Every frame is intentional.</p>
+        <a href="#contact" class="about-link">Start a project</a>
+      </div>
+    </section>
+
+    <section class="contact-strip section-observe" id="contact" data-section="contact" aria-labelledby="contact-title">
+      <div class="cs-left reveal-on-scroll">
+        <p class="cs-label">Let's work together</p>
+        <h2 class="cs-title" id="contact-title">Ready to book a session?</h2>
+        <a class="cs-email" href="mailto:braydenjonesphotography@gmail.com">braydenjonesphotography@gmail.com</a>
+      </div>
+      <a href="mailto:braydenjonesphotography@gmail.com" class="cs-btn reveal-on-scroll">Get in touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Brayden Jones Photography</div>
+    <div class="footer-copy">© 2026 · Ventura, CA</div>
+    <div class="footer-links">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:braydenjonesphotography@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Expanded portfolio image">
+    <button class="lightbox-close" type="button">Close</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&lsaquo;</button>
+    <img class="lightbox-img" alt="">
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&rsaquo;</button>
+    <p class="lightbox-caption"></p>
+  </div>
+</body>
+</html>
+
+
+
